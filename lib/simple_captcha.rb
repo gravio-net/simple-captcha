@@ -40,11 +40,11 @@ module SimpleCaptcha
   # 'almost_invisible'
   # 'random'
   mattr_accessor :image_style
-  @@image_style = 'simply_blue'
+  @@image_style = 'random'
 
   # 'low', 'medium', 'high', 'random'
   mattr_accessor :distortion
-  @@distortion = 'low'
+  @@distortion = 'medium'
 
   # command path
   mattr_accessor :image_magick_path
