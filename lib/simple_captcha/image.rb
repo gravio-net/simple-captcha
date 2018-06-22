@@ -18,7 +18,7 @@ module SimpleCaptcha #:nodoc
 
     class << self
 
-      def image_params(key = 'distorted_black')
+      def image_params(key = 'random')
         image_keys = @@image_styles.keys
 
         style = begin
@@ -32,7 +32,7 @@ module SimpleCaptcha #:nodoc
         @@image_styles[style]
       end
 
-      def distortion(key='medium')
+      def distortion(key='random')
         key =
           key == 'random' ?
           DISTORTIONS[rand(DISTORTIONS.length)] :
