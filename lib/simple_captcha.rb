@@ -41,11 +41,11 @@ module SimpleCaptcha
   # 'almost_invisible'
   # 'random'
   mattr_accessor :image_style
-  @@image_style = 'simply_blue'
+  @@image_style = 'random'
 
   # 'low', 'medium', 'high', 'random'
   mattr_accessor :distortion
-  @@distortion = 'low'
+  @@distortion = 'random'
 
   # 'none', 'low', 'medium', 'high'
   mattr_accessor :implode
